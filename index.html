@@ -54,30 +54,33 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="suppliers.html">Suppliers</a></li>
-          <li><a href="testimonials.html">Clients</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="drop-down"><a href="">Our Products</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
+              
+              <li class="drop-down"><a href="#">Active Pharmaceutical Ingredients</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="AntibioticsAntibacterial.html">Antibiotics/Antibacterial</a></li>
+                  <li><a href="VET.html">VET		</a></li>
+                  <li><a href="Antidiabetic.html">Antidiabetic</a></li>
+                  <li><a href="Anticulcerants.html">Anticulcerants		</a></li>
+                  <li><a href="AntiinflammatoryAnalgestic.html">Antiinflammatory/Analgestic	</a></li>
+                  <li><a href="OtherAntiNonAnti.html">Other Antibiotics/Non-Antibiotics	</a></li>
+                  <li><a href="others.html">Others</a></li>
+
                 </ul>
               </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <li><a href="FillCapsules.html">Ready to fill Capsules/Forms</a></li>
+              <li><a href="GelatinCapsules.html">Empty Hard Gelatin Capsule</a></li>
+              <li><a href="ExcipientsFoodChem.html">Excipients, Food Ingredients & Other Chemicals</a></li>
+              <li><a href="Adhesives.html">Adhesives</a></li>
             </ul>
           </li>
-         
-
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="testimonials.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+        
       </nav><!-- .nav-menu -->
 
     </div>
@@ -143,6 +146,10 @@
 
   </section><!-- End Hero -->
 
+
+  <a href="mailto:garimavalecha4@gmail.com" id="mail-icon"><i class="ri-mail-line"></i></a>
+
+
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -167,12 +174,55 @@
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style>
+            .mySlides {display:none;}
+            </style>
+            
+            
+            <div class="w3-container">
+              
+            </div>
+            
+            <div class="w3-content w3-display-container">
+            
+            <div class="w3-display-container mySlides">
+            <div row="row" style="display: block; margin-left: auto;margin-right: auto; width: 50%;padding-right:20rem; ">
+            <img src="https://i.ibb.co/VpvQ0WD/Snapchat-849240255.jpg" style="height:300px; width:auto; "> 
+              
+            </div>
+            </div>
+             </div>
+            
+            
+            <div class="w3-display-container mySlides">
+              <div row="row" style="display: block; margin-left: auto;margin-right: auto; width: 50%;padding-right:20rem;">
+              <img src="https://i.ibb.co/mchFPYh/Snapchat-1224470041.jpg" style="height:300px; width:auto; "> 
+             
+            </div>
+            </div>
+            
+
+            <div class="w3-display-container mySlides">
+              <div row="row" style="display: block; margin-left: auto;margin-right: auto; width: 50%;padding-right:20rem;">
+              <img src="https://i.ibb.co/djkBwwF/Snapchat-2086344979.jpg" style="height:300px; width:auto;">
+              </div>
+            </div>
+            
+            
+            <div class="w3-display-container mySlides">
+              <div row="row" style="display: block; margin-left: auto;margin-right: auto; width: 50%;padding-right:20rem;">
+              <img src="https://i.ibb.co/mchFPYh/Snapchat-1224470041.jpg" style="height:300px; width:auto; "> 
+             
+            </div>
+            </div>
+            
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            
+            </div>
+            
           </div>
         </div>
 
@@ -914,8 +964,30 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
+   
 
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+     
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

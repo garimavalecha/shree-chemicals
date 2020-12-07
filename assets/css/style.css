@@ -574,8 +574,11 @@ section {
 }
 
 .about .content p:last-child {
-  margin-bottom: 0; 
-  text-align:justify;
+  margin-bottom: 0;
+  text-align: justify;
+  
+  
+  ;
 }
 
 .about .content .btn-learn-more {
@@ -599,6 +602,13 @@ section {
   background: #e28e51;
   color: #fff;
   text-decoration: none;
+}
+
+.company
+{
+text-decoration: solid;
+text-align: center;
+font-size: 1rem
 }
 
 /*--------------------------------------------------------------
@@ -1029,7 +1039,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #ef6603;
+  color:#e28e51;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1061,7 +1071,7 @@ section {
 }
 
 .pricing ul i {
-  color: #ef6603;
+  color: #e28e51;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1079,7 +1089,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #ef6603;
+  background:#e28e51;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 50px;
@@ -1093,16 +1103,16 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #fc8129;
+  background: #e28e51;
 }
 
 .pricing .featured {
-  border: 2px solid #ef6603;
+  border: 2px solid #e28e51;
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #ef6603;
+  background:#e28e51;
 }
 
 .pricing .advanced {
@@ -1114,7 +1124,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #ef6603;
+  background:#e28e51;
   color: #fff;
 }
 
@@ -1137,7 +1147,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #ef6603;
+  font-family:#e28e51;
   font-size: 18px;
   font-weight: 500;
 }
@@ -1691,3 +1701,35 @@ section {
   color: black;
   font-family: "Poppins", sans-serif;
 }
+
+/* ----------------------FIxed mail icon -------------------------------*/
+
+#mail-icon { 
+  position: fixed;
+  display: block;
+  right: 25px;
+  top: 60px;
+  z-index: 99999;
+}
+
+#mail-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #e28e51;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+#mail-icon i:hover {
+  background: #e28e51;
+  color: #fff;
+}
+
+
+
+
