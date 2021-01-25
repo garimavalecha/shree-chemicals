@@ -495,6 +495,91 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.logo-carousel {
+  overflow: inherit;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-track::before,
+.slick-track::after {
+  display: table;
+  content: '';
+}
+
+.slick-track::after {
+  clear: both;
+}
+
+.slick-track {
+  padding:  0;
+  display: flex;
+align-items: center;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 2rem;
+  height: 1.5rem;
+  text-indent: -10000px;
+  margin-top: -16px;
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -40px;
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -40px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+  
+.row {
+  overflow: hidden;
+}  
+
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -608,7 +693,12 @@ section {
 {
 text-decoration: solid;
 text-align: center;
-font-size: 1rem
+font-size: 1rem;
+}
+
+.px-4 h5
+{
+  font-size: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -753,21 +843,24 @@ font-size: 1rem
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 13px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  background: #FFF	;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
   width: 100%;
-  height: 100%;
+  height: 150px;
+  margin: 2%;
+  display: flex;
+  align-items: center;
 }
 
-.services .icon-box:hover {
+/* .services .icon-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
-}
+} */
 
 .services .icon {
   position: absolute;
@@ -799,11 +892,25 @@ font-size: 1rem
 
 .services .description {
   font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
 }
 
+.companies{
+  /* background-color: #e28e51; */
+  padding:2%;
+}
+
+.companies .border-right
+{
+  border-color:#e28e51 !important;
+  /* padding-right: 2%; */
+}
+
+.region
+{
+  background-color: #e28e51;
+  color:white;
+  opacity: 0.9;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1309,6 +1416,11 @@ font-size: 1rem
   color: #fff;
 }
 
+.icon-hover:hover p
+{
+  color: #ef6603;
+}
+
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -1730,6 +1842,61 @@ font-size: 1rem
   color: #fff;
 }
 
-
+/* ----------timeline ----------*/
+.hori-timeline .events {
+  border-top: 3px solid #e9ecef;
+}
+.hori-timeline .events .event-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+  .hori-timeline .events .event-list {
+      display: inline-block;
+      width: 16%;
+      padding-top: 45px;
+  }
+  .hori-timeline .events .event-list .event-date {
+      top: -12px;
+  }
+}
+.bg-soft-primary {
+  background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+  background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+  background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+  background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+  border: none;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 0 13px 0 rgba(172, 172, 184, 0.44);
+  box-shadow: 0 0 13px 0 rgba(190, 185, 185, 0.44);
+}
 
 
